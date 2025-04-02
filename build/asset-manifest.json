@@ -1,28 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.109dc55b.chunk.css",
-    "main.js": "/static/js/main.4c255878.chunk.js",
-    "main.js.map": "/static/js/main.4c255878.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.62c1cfe4.js",
-    "runtime-main.js.map": "/static/js/runtime-main.62c1cfe4.js.map",
-    "static/css/2.a10018f7.chunk.css": "/static/css/2.a10018f7.chunk.css",
-    "static/js/2.aa693586.chunk.js": "/static/js/2.aa693586.chunk.js",
-    "static/js/2.aa693586.chunk.js.map": "/static/js/2.aa693586.chunk.js.map",
-    "static/js/3.f5a516dc.chunk.js": "/static/js/3.f5a516dc.chunk.js",
-    "static/js/3.f5a516dc.chunk.js.map": "/static/js/3.f5a516dc.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.37ba0637949fc16f9c7cdbfdd5f42217.js": "/precache-manifest.37ba0637949fc16f9c7cdbfdd5f42217.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.a10018f7.chunk.css.map": "/static/css/2.a10018f7.chunk.css.map",
-    "static/css/main.109dc55b.chunk.css.map": "/static/css/main.109dc55b.chunk.css.map",
-    "static/js/2.aa693586.chunk.js.LICENSE.txt": "/static/js/2.aa693586.chunk.js.LICENSE.txt",
-    "static/media/Header.css": "/static/media/fundofundo.7edd2a50.png"
+    "main.css": "/punkoc/sitekaluniaprojeto.git/static/css/main.b933fbaf.css",
+    "main.js": "/punkoc/sitekaluniaprojeto.git/static/js/main.e1a2d635.js",
+    "static/js/488.7213179a.chunk.js": "/punkoc/sitekaluniaprojeto.git/static/js/488.7213179a.chunk.js",
+    "static/media/fundofundo.png": "/punkoc/sitekaluniaprojeto.git/static/media/fundofundo.16ccfe636fdc4e3e5969.png",
+    "static/media/background.jpg": "/punkoc/sitekaluniaprojeto.git/static/media/background.8e117ef668c9485ac8fb.jpg",
+    "index.html": "/punkoc/sitekaluniaprojeto.git/index.html",
+    "main.b933fbaf.css.map": "/punkoc/sitekaluniaprojeto.git/static/css/main.b933fbaf.css.map",
+    "main.e1a2d635.js.map": "/punkoc/sitekaluniaprojeto.git/static/js/main.e1a2d635.js.map",
+    "488.7213179a.chunk.js.map": "/punkoc/sitekaluniaprojeto.git/static/js/488.7213179a.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.62c1cfe4.js",
-    "static/css/2.a10018f7.chunk.css",
-    "static/js/2.aa693586.chunk.js",
-    "static/css/main.109dc55b.chunk.css",
-    "static/js/main.4c255878.chunk.js"
+    "static/css/main.b933fbaf.css",
+    "static/js/main.e1a2d635.js"
   ]
 }

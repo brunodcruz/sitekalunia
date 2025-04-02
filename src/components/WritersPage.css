@@ -1,0 +1,59 @@
+.writers-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 20px 0; /* Espaço extra para não ficar muito grudado */
+    background-color: #622b2b;
+    width: 100%;
+    height: auto; /* Remove o tamanho fixo da altura */
+}
+
+/* Caixa do título */
+.writers-title-box {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    padding: 15px 30px;
+    text-align: center;
+    margin-top: 50px; /* Antes era 30px, agora desce um pouco mais */
+    margin-bottom: 30px; /* Mais espaço abaixo do título */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajuste do carrossel */
+.alice-carousel {
+    margin-top: 40px; /* Antes era 20px, agora desce um pouco mais */
+    width: 100%;
+    max-width: 900px;
+}
+
+/* Estilização do item do carrossel */
+.carousel-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+    max-width: 900px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajuste das imagens */
+.carousel-item img {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.carousel-item p {
+    flex: 1;
+    font-size: 18px;
+    color: #000000; /* Escolha a cor desejada */
+    text-align: left;
+    max-width: 500px;
+}
+

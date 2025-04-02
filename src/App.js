@@ -1,61 +1,63 @@
 import React from "react";
-import Slider from "react-slick"; // Importando o Slider do react-slick
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./App.css";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
 import Header from "./components/Header";
 import Menu from "./components/Menu";
-import "./App.css"; // Certifique-se de importar o arquivo CSS
+import WritersPage from "./components/WritersPage"; // Página dos escritores
+import TextosPage from "./components/TextosPage"; // Importa a nova página
 
-// Importando o CSS do slick-carousel
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css"; 
-
-function App() {
-  // Configuração do carrossel
-  const settings = {
-    dots: true,           // Adiciona pontos de navegação
-    infinite: true,       // Faz com que o carrossel volte ao início após o final
-    speed: 500,           // Velocidade da transição (em ms)
-    slidesToShow: 1,      // Número de slides visíveis por vez
-    slidesToScroll: 1,    // Número de slides para avançar de cada vez
-    arrows: true,         // Exibe setas de navegação
-    centerMode: true,     // Centraliza o slide ativo
-    focusOnSelect: true,  // Foca no slide ao clicar
-  };
+// Página inicial
+function Home() {
+  const items = [
+    <img
+      src={`${process.env.PUBLIC_URL}/fotomeio.jpg`}
+      alt="Foto 1"
+      className="carousel-image"
+      key="foto1"
+    />,
+    <img
+      src={`${process.env.PUBLIC_URL}/foto2.jpg`}
+      alt="Foto 2"
+      className="carousel-image"
+      key="foto2"
+    />,
+    <img
+      src={`${process.env.PUBLIC_URL}/foto3.jpg`}
+      alt="Foto 3"
+      className="carousel-image"
+      key="foto3"
+    />,
+  ];
 
   return (
-    <div className="app-container">
-      <Header />
-      <Menu />
-      <main>
-        <h1>B E M V I N D O S(AS)!</h1>
-        <p>Site do Coletivo Literário Kalúnia.</p>
+    <main>
+      <h1>B E M - V I N D O S(AS)!</h1>
+      <p>Site do Coletivo Literário Kalúnia.</p>
+      <AliceCarousel
+        infinite={true}
+        mouseDragEnabled={true}
+        items={items}
+        className="alice-carousel"
+      />
+    </main>
+  );
+}
 
-        {/* Carrossel de Imagens */}
-        <Slider {...settings}>
-          <div>
-            <img
-              src={`${process.env.PUBLIC_URL}/fotomeio.jpg`}
-              alt="Foto 1"
-              className="carousel-image"
-            />
-          </div>
-          <div>
-            <img
-              src={`${process.env.PUBLIC_URL}/foto2.jpg`}
-              alt="Foto 2"
-              className="carousel-image"
-            />
-          </div>
-          <div>
-            <img
-              src={`${process.env.PUBLIC_URL}/foto3.jpg`}
-              alt="Foto 3"
-              className="carousel-image"
-            />
-          </div>
-          {/* Adicione mais imagens conforme necessário */}
-        </Slider>
-      </main>
-    </div>
+function App() {
+  return (
+    <Router>
+      <div className="app-container">
+        <Header />
+        <Menu />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/escritores" element={<WritersPage />} />
+          <Route path="/textos" element={<TextosPage />} /> {/* Adiciona a nova rota */}
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

@@ -4,10 +4,10 @@
     align-items: center;
     justify-content: flex-start;
     text-align: center;
-    padding: 20px 0; /* Espaço extra para não ficar muito grudado */
+    padding: 20px 10px; /* Menor padding lateral para telas menores */
     background-color: #622b2b;
     width: 100%;
-    height: auto; /* Remove o tamanho fixo da altura */
+    height: auto;
 }
 
 /* Caixa do título */
@@ -16,14 +16,15 @@
     border-radius: 12px;
     padding: 15px 30px;
     text-align: center;
-    margin-top: 50px; /* Antes era 30px, agora desce um pouco mais */
-    margin-bottom: 30px; /* Mais espaço abaixo do título */
+    margin-top: 50px;
+    margin-bottom: 30px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 90%; /* Evita que o título fique muito largo */
 }
 
 /* Ajuste do carrossel */
 .alice-carousel {
-    margin-top: 40px; /* Antes era 20px, agora desce um pouco mais */
+    margin-top: 40px;
     width: 100%;
     max-width: 900px;
 }
@@ -34,7 +35,7 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
-    width: 80%;
+    width: 90%;
     max-width: 900px;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
@@ -44,16 +45,42 @@
 
 /* Ajuste das imagens */
 .carousel-item img {
-    width: 250px;
+    width: 100%;
+    max-width: 250px; /* Garante que não fique muito grande */
     height: auto;
     border-radius: 8px;
 }
 
+/* Ajuste do texto */
 .carousel-item p {
     flex: 1;
     font-size: 18px;
-    color: #000000; /* Escolha a cor desejada */
+    color: #000000;
     text-align: left;
     max-width: 500px;
 }
 
+/* 📱 Responsividade para telas menores */
+@media screen and (max-width: 768px) {
+    .carousel-item {
+        flex-direction: column; /* Empilha os itens no celular */
+        text-align: center;
+        padding: 15px;
+        width: 95%;
+    }
+
+    .carousel-item img {
+        max-width: 200px; /* Diminui um pouco a imagem */
+    }
+
+    .carousel-item p {
+        max-width: 90%;
+        font-size: 16px; /* Reduz o tamanho do texto */
+        text-align: center;
+    }
+
+    .writers-title-box {
+        max-width: 95%;
+        font-size: 20px;
+    }
+}

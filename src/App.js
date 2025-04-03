@@ -7,6 +7,8 @@ import Header from "./components/Header";
 import Menu from "./components/Menu";
 import WritersPage from "./components/WritersPage"; // Página dos escritores
 import TextosPage from "./components/TextosPage"; // Importa a nova página
+import SobrePage from "./components/SobrePage";
+import EventosPage from "./components/EventosPage";
 
 // Página inicial
 function Home() {
@@ -55,6 +57,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/escritores" element={<WritersPage />} />
           <Route path="/textos" element={<TextosPage />} /> {/* Adiciona a nova rota */}
+          <Route path="/sobre" element={<SobrePage />} /> {/* Nova rota */}
+          <Route path="/eventos" element={<EventosPage />} />
         </Routes>
       </div>
     </Router>

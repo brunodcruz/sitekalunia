@@ -10,7 +10,9 @@ const Menu = () => {
         <li><Link to="/escritores">Escritores/as</Link></li>
         <li><Link to="/fotos">Fotos</Link></li>
         <li><Link to="/eventos">Eventos</Link></li>
-        <li><Link to="/textos">Textos do mês</Link></li>
+        <li><Link to="/textos">Textos do Mês</Link></li>
+        <li><Link to="/sobre">Sobre o Coletivo</Link></li>
+
       </ul>
     </nav>
   );

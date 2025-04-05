@@ -9,6 +9,7 @@ import WritersPage from "./components/WritersPage"; // Página dos escritores
 import TextosPage from "./components/TextosPage"; // Importa a nova página
 import SobrePage from "./components/SobrePage";
 import EventosPage from "./components/EventosPage";
+import FotosPage from "./components/FotosPage"; // Importe a página
 
 // Página inicial
 function Home() {
@@ -59,6 +60,7 @@ function App() {
           <Route path="/textos" element={<TextosPage />} /> {/* Adiciona a nova rota */}
           <Route path="/sobre" element={<SobrePage />} /> {/* Nova rota */}
           <Route path="/eventos" element={<EventosPage />} />
+          <Route path="/fotos" element={<FotosPage />} />
         </Routes>
       </div>
     </Router>

@@ -4,14 +4,14 @@
     align-items: center;
     justify-content: flex-start;
     text-align: center;
-    padding: 20px 10px; /* Menor padding lateral para telas menores */
+    padding: 20px 10px;
     background-color: #622b2b;
     width: 100%;
     height: auto;
-}
-
-/* Caixa do título */
-.writers-title-box {
+  }
+  
+  /* Caixa do título */
+  .writers-title-box {
     background: rgba(255, 255, 255, 0.8);
     border-radius: 12px;
     padding: 15px 30px;
@@ -19,24 +19,24 @@
     margin-top: 50px;
     margin-bottom: 30px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 90%; /* Evita que o título fique muito largo */
-}
-
-/* Ajuste do carrossel */
-.alice-carousel {
+    max-width: 90%;
+  }
+  
+  /* Ajuste do carrossel */
+  .alice-carousel {
     margin-top: 40px;
     width: 100%;
-    max-width: 900px;
-}
-
-/* Estilização do item do carrossel */
-.carousel-item {
+    max-width: 1000px;
+  }
+  
+  /* Estilização do item do carrossel */
+  .carousel-item {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
     width: 90%;
-    max-width: 900px;
+    max-width: 1000px;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 12px;
@@ -44,32 +44,47 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-}
-
-/* Ajuste das imagens */
-.carousel-item img {
+  }
+  
+  /* Ajuste das imagens */
+  .carousel-item img {
     width: 100%;
-    max-width: 250px; /* Garante que não fique muito grande */
+    max-width: 250px;
     height: auto;
     border-radius: 8px;
-}
-
-/* Ajuste do texto */
-.carousel-item p {
+  }
+  
+  /* Ajuste do texto */
+  .carousel-item p {
     flex: 1;
     font-size: 18px;
     color: #000000;
-    text-align: left;
-    max-width: 500px;
-}
-
-@media screen and (max-width: 768px) {
+    text-align: justify;
+    width: 100%;
+    max-width: 900px;
+    padding: 10px;
+  }
+  
+  .bio-container {
+    flex: 1;
+    font-size: 18px;
+    color: #000000;
+    text-align: justify;
+    width: 100%;
+    max-width: 900px;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    padding: 10px;
+  }
+  
+  /* 📱 Responsividade para telas menores */
+  @media screen and (max-width: 768px) {
     .carousel-item {
       flex-direction: column;
       text-align: center;
       padding: 15px;
       width: 95%;
-      margin-bottom: 20px; /* espaçamento entre os slides no mobile */
+      margin-bottom: 20px;
     }
   
     .carousel-item img {
@@ -80,8 +95,8 @@
     .bio-container {
       max-width: 100%;
       font-size: 16px;
-      padding: 0 10px; /* Adiciona um pouco de margem lateral */
-      text-align: justify; /* Mantém o alinhamento justificado */
+      padding: 0 10px;
+      text-align: justify;
     }
   
     .writers-title-box {
@@ -89,13 +104,4 @@
       font-size: 20px;
     }
   }
-
-.bio-container {
-  flex: 1;
-  font-size: 18px;
-  color: #000000;
-  text-align: justify;
-  max-width: 500px;
-  word-break: break-word;
-  overflow-wrap: break-word;
-}
+  

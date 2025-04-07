@@ -32,6 +32,36 @@
     "name": "Rosália Corrêa",
     "image": "/images/writer2.jpg",
     "bio": "Nunc elementum eros et ipsum rutrum suscipit. Maecenas dui dolor, pellentesque vitae quam vel, viverra posuere nisl."
+  },
+
+  {
+    "name": "Marly de Souza",
+    "image": "/images/writer7.jpg",
+    "bio": "Nunc elementum eros et ipsum rutrum suscipit. Maecenas dui dolor, pellentesque vitae quam vel, viverra posuere nisl."
+  },
+
+  {
+    "name": "Georges Elia Zaki",
+    "image": "/images/writer8.jpg",
+    "bio": "Nunc elementum eros et ipsum rutrum suscipit. Maecenas dui dolor, pellentesque vitae quam vel, viverra posuere nisl."
+  },
+
+  {
+    "name": "Margô Serra",
+    "image": "/images/writer9.jpg",
+    "bio": "Nunc elementum eros et ipsum rutrum suscipit. Maecenas dui dolor, pellentesque vitae quam vel, viverra posuere nisl."
+  },
+ 
+  {
+    "name": "Eliana M S P Lima",
+    "image": "/images/writer10.jpg",
+    "bio": "Nunc elementum eros et ipsum rutrum suscipit. Maecenas dui dolor, pellentesque vitae quam vel, viverra posuere nisl."
+  },
+
+  {
+    "name": "Neia Costa",
+    "image": "/images/writer11.jpg",
+    "bio": "Nunc elementum eros et ipsum rutrum suscipit. Maecenas dui dolor, pellentesque vitae quam vel, viverra posuere nisl."
   }
  
 ]

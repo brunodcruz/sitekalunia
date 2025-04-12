@@ -1,49 +1,34 @@
-/* Mantém a imagem do evento em um tamanho adequado */
-.evento-imagem {
-  width: 80%; /* Ajuste conforme necessário */
-  max-width: 600px; /* Limita para não ficar muito grande */
-  height: auto;
-  border-radius: 10px;
-  display: block;
-  margin: 20px auto;
+/* Container geral da página de eventos */
+.eventos-container {
+  background-color: #622b2b;
+  padding: 30px 20px;
+  color: white;
+  text-align: center;
 }
 
-/* Estiliza o nome clicável */
-.highlight {
-  color: #ffcc00;
-  cursor: pointer;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-/* Fundo do modal */
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+/* Itens do carrossel */
+.carousel-item {
   display: flex;
-  align-items: center;
   justify-content: center;
-}
-
-/* Caixa da imagem no modal */
-.modal-content {
-  background: white;
+  align-items: center;
   padding: 10px;
-  border-radius: 10px;
-  max-width: 90%; /* Para não ocupar toda a tela */
-  max-height: 90%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-/* Ajuste do tamanho da foto no modal */
-.modal-content img {
-  width: 300px; /* Tamanho menor */
-  height: auto;
-  border-radius: 8px;
+.carousel-item img {
+  max-height: 500px; /* Limita a altura para vertical não estourar */
+  width: auto;
+  max-width: 90%;
+  border-radius: 10px;
+  object-fit: contain;
 }
+
+@media screen and (max-width: 768px) {
+  .carousel-item img {
+    max-height: 300px;
+    max-width: 100%;
+  }
+}
+
+  .modal-content img {
+    width: 90%;
+  }

@@ -1,17 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import "./EventosPage.css";
 
-const totalFotos = 14; // <- ajuste esse número conforme o total de fotos
-const fotos = Array.from({ length: totalFotos }, (_, i) => `${process.env.PUBLIC_URL}/images/eventos/${i + 1}.jpg`);
+const totalFotos = 22; // Quantidade de fotos numeradas (1.jpg, 2.jpg, ...)
 
 const EventosPage = () => {
-  const [showModal, setShowModal] = useState(false);
+  const [classes, setClasses] = useState({});
 
-  const items = fotos.map((src, index) => (
-    <div className="carousel-item" key={index}>
-      <img src={src} alt={`Evento ${index + 1}`} />
+  const handleImageLoad = (index, e) => {
+    const img = e.target;
+    const isVertical = img.naturalHeight > img.naturalWidth;
+    setClasses((prev) => ({
+      ...prev,
+      [index]: isVertical ? "vertical" : "horizontal",
+    }));
+  };
+
+  const items = Array.from({ length: totalFotos }, (_, i) => (
+    <div className="carousel-item-evento" key={i}>
+      <img
+        src={`${process.env.PUBLIC_URL}/images/eventos/${i + 1}.jpg`}
+        alt={`Evento ${i + 1}`}
+        className={`foto-evento ${classes[i] || ""}`}
+        onLoad={(e) => handleImageLoad(i, e)}
+      />
     </div>
   ));
 
@@ -20,24 +33,16 @@ const EventosPage = () => {
       <h2>Eventos do Coletivo</h2>
       <p>
         Lançamento dos livros "Questionadora.Eu?" e "Os Nãos e os Porquês" da nossa Kaluniadora{" "}
-        <span className="highlight" onClick={() => setShowModal(true)}>Maria Cassavia Zaki</span>.
+        <span className="highlight">Maria Cassavia Zaki</span>.
       </p>
 
       <AliceCarousel
         items={items}
         infinite
         mouseTracking
-        disableButtonsControls={false}
         disableDotsControls={false}
+        disableButtonsControls={false}
       />
-
-      {showModal && (
-        <div className="modal-overlay" onClick={() => setShowModal(false)}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <img src={`${process.env.PUBLIC_URL}/images/maria-cassavia.jpg`} alt="Maria Cassavia Zaki" />
-          </div>
-        </div>
-      )}
     </div>
   );
 };

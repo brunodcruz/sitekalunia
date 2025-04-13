@@ -1,34 +1,24 @@
-/* Container geral da página de eventos */
-.eventos-container {
-  background-color: #622b2b;
-  padding: 30px 20px;
-  color: white;
-  text-align: center;
-}
-
-/* Itens do carrossel */
-.carousel-item {
+.carousel-item-evento {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 15px;
 }
 
-.carousel-item img {
-  max-height: 500px; /* Limita a altura para vertical não estourar */
-  width: auto;
+.foto-evento {
+  max-height: 500px;
   max-width: 90%;
   border-radius: 10px;
   object-fit: contain;
 }
 
-@media screen and (max-width: 768px) {
-  .carousel-item img {
-    max-height: 300px;
-    max-width: 100%;
-  }
+/* Ajuste específico para fotos horizontais e verticais */
+.foto-evento.vertical {
+  max-height: 500px;
+  width: auto;
 }
 
-  .modal-content img {
-    width: 90%;
-  }
+.foto-evento.horizontal {
+  max-width: 100%;
+  height: auto;
+}

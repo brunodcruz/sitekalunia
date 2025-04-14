@@ -19,3 +19,37 @@ h2 {
     padding: 10px 20px; /* Adiciona um espaçamento interno */
     border-radius: 8px; /* Borda arredondada opcional */
 }
+
+@media (max-width: 768px) {
+    .textos-container {
+      padding: 20px 10px;
+      min-height: auto;
+    }
+  
+    @media (max-width: 480px) {
+        .carousel-image {
+          width: 90vw;
+          max-height: 70vh;
+          height: auto;
+          object-fit: cover;
+          border-radius: 8px;
+          margin: 10px auto;
+          display: block;
+        }
+      }
+    h2 {
+      font-size: 1.4em;
+      padding: 8px 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 1.2em;
+      padding: 6px 10px;
+    }
+  
+    .carousel-image {
+      border-radius: 6px;
+    }
+  }

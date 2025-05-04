@@ -36,6 +36,9 @@ body::before {
   border-radius: 15px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   box-sizing: border-box; /* Inclui padding e bordas no tamanho total */
+  font-family: 'Caveat', cursive;
+  color: black; /* garante legibilidade */
+  font-weight: 400; /* mantém leve e delicada */
 }
 
 /* Estilo para o cabeçalho */

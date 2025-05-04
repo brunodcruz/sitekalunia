@@ -35,21 +35,21 @@
 
 /* Estilo dos links do menu */
 .menu a {
+  font-family: 'Satisfy', cursive; /* ou a fonte que escolheu */
+  font-weight: normal;             /* remove o negrito */
+  color: black;                    /* define cor preta */
   text-decoration: none;
-  color: white; /* Cor do texto do menu */
-  font-size: 1.1em; /* Tamanho da fonte */
-  font-weight: bold;
-  padding: 10px 20px; /* Ajuste o tamanho do botão */
-  border-radius: 10px; /* Borda arredondada nos itens */
+  font-size: 1.1em;
+  padding: 10px 20px;
+  border-radius: 10px;
   transition: background-color 0.3s ease, color 0.3s ease;
-  background-color: transparent; /* Remove qualquer fundo padrão */
-  display: block; /* Garante clique em toda a área do item */
+  background-color: transparent;
+  display: block;
 }
-
 /* Efeito de hover nos itens do menu */
 .menu a:hover {
   background-color: rgba(255, 255, 255, 0.3); /* Fundo transparente com efeito de hover */
-  color: #000; /* Cor do texto ao passar o mouse */
+  color: #ffffff; /* Cor do texto ao passar o mouse */
 }
 
 /* Responsividade para tablets */
@@ -79,4 +79,6 @@
     min-width: 100px; /* Define uma largura mínima para os itens do menu */
   }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 

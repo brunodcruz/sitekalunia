@@ -3,7 +3,7 @@ import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import "./EventosPage.css";
 
-const totalFotos = 22; // Quantidade de fotos numeradas (1.jpg, 2.jpg, ...)
+const totalFotos = 29; // Quantidade de fotos numeradas (1.jpg, 2.jpg, ...)
 
 const EventosPage = () => {
   const [classes, setClasses] = useState({});
@@ -32,8 +32,8 @@ const EventosPage = () => {
     <div className="eventos-container">
       <h2>Eventos do Coletivo</h2>
       <p>
-        Lançamento dos livros "Questionadora.Eu?" e "Os Nãos e os Porquês" da nossa Kaluniadora{" "}
-        <span className="highlight">Maria Cassavia Zaki</span>.
+        Lançamento do livro "Salada Literária" do escritor <strong>Georges Elia Zaki.</strong>{" "}
+        <span className="highlight"></span>
       </p>
 
       <AliceCarousel

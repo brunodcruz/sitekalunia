@@ -36,7 +36,7 @@ function Home() {
 
   return (
     <main>
-      <h1>B E M - V I N D O S(AS)!</h1>
+      <h1 className="titulo-home">B E M - V I N D O S(AS)!</h1>
       <p>Site do Coletivo Literário Kalúnia.</p>
       <AliceCarousel
         infinite={true}

@@ -20,6 +20,7 @@ h2 {
   background-color: rgba(255, 255, 255, 0.5);
   padding: 10px 20px;
   border-radius: 8px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* sombra no texto */
 }
 
 @media (max-width: 768px) {

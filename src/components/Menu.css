@@ -43,8 +43,9 @@
   padding: 10px 20px;
   border-radius: 10px;
   transition: background-color 0.3s ease, color 0.3s ease;
-  background-color: rgba(255, 255, 255, 0.2); /* fundo branco mais transparente */
+  background-color: rgba(255, 255, 255, 0.2);
   display: block;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 /* Efeito de hover nos itens do menu */
 .menu a:hover {

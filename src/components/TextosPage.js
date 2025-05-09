@@ -3,7 +3,7 @@ import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import "./TextosPage.css";
 
-const totalImagens = 17; // Só mudar esse número quando adicionar ou remover imagens
+const totalImagens = 21; // Só mudar esse número quando adicionar ou remover imagens
 
 const items = Array.from({ length: totalImagens }, (_, i) => {
   const numero = i + 1;

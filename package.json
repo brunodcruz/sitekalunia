@@ -3,19 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "cra-template": "1.2.0",
-    "react": "^18.0.0",
-    "react-alice-carousel": "^2.9.1",
-    "react-dom": "^18.0.0",
-    "react-router-dom": "^7.4.1",
-    "react-scripts": "^5.0.0",
-    "swiper": "^11.1.15",
-    "web-vitals": "^4.2.4"
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4",
+    "react-alice-carousel": "^2.7.1",
+    "react-router-dom": "^6.11.0",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/core": "^7.22.5",
+    "@babel/preset-react": "^7.22.5"
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -39,8 +41,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "gh-pages": "^6.2.0"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   },
   "description": "Frontend do projeto Site Kalunia",
   "main": "index.js",

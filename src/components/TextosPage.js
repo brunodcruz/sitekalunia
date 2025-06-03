@@ -5,15 +5,9 @@ import "./TextosPage.css";
 import { monthlyTexts } from "../data/monthlyTexts";
 
 const TextosPage = () => {
-  const [selectedMonth, setSelectedMonth] = useState(null);
+  const [selectedMonth, setSelectedMonth] = useState(monthlyTexts[0] || null);
   const [images, setImages] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    if (!selectedMonth && monthlyTexts.length > 0) {
-      setSelectedMonth(monthlyTexts[0]);
-    }
-  }, []);
 
   useEffect(() => {
     if (selectedMonth) {
